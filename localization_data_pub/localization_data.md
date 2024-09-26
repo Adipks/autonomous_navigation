@@ -65,3 +65,4 @@ void set_initial_2d(const geometry_msgs::PoseStamped &rvizClick) {
   odomOld.pose.pose.orientation.z = initialTheta;
 ```
 
+Refer here for Full Code: [Code](https://github.com/Adipks/autonomous_navigation/blob/main/localization_data_pub/src/ekf_odom_pub.cpp)
