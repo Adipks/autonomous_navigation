@@ -1,26 +1,3 @@
-/*
- * Automatic Addison
- * Website: https://automaticaddison.com
- * Subscribe: ROS node that subscribes to the following topics:
- *  right_ticks : Tick counts from the right motor encoder (std_msgs/Int16)
- * 
- *  left_ticks : Tick counts from the left motor encoder  (std_msgs/Int16)
- * 
- *  imu/data : Data from the Inertial Measurement Unit (IMU) sensor  
- *                 (sensor_msgs/Imu.msg)
- *  initial_2d : The initial position and orientation of the robot.
- *               (geometry_msgs/PoseStamped)
- *
- * Publish: This node will publish to the following topics:
- *  odom_data_euler : Position and velocity estimate. The orientation.z 
- *                    variable is an Euler angle representing the yaw angle.
- *                    (nav_msgs/Odometry)
- *  odom_data_quat : Position and velocity estimate. The orientation is 
- *                   in quaternion format.
- *                   (nav_msgs/Odometry)
- * Modified from Practical Robotics in C++ book (ISBN-10 : 9389423465)
- *   by Lloyd Brombach
- */
 
 // Include various libraries
 #include "ros/ros.h" 
