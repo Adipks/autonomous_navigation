@@ -14,3 +14,4 @@ The system utilizes an **Extended Kalman Filter (EKF)** that integrates data fro
 The EKF helps **AMCL (Adaptive Monte Carlo Localization)** to more accurately localize the rover's footprint by:
 - Filtering out noise from these sensors.
 - Fusing data to enhance localization precision.
+ sfsdf
