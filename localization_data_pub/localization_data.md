@@ -65,4 +65,14 @@ void set_initial_2d(const geometry_msgs::PoseStamped &rvizClick) {
   odomOld.pose.pose.orientation.z = initialTheta;
 ```
 
+> Subscribers that gets information from Sensor topics
+
+```
+  // Subscribe to ROS topics
+  ros::Subscriber subForRightCounts = node.subscribe("right_ticks", 100, Calc_Right, ros::TransportHints().tcpNoDelay());
+  ros::Subscriber subForLeftCounts = node.subscribe("left_ticks", 100, Calc_Left, ros::TransportHints().tcpNoDelay());
+  ros::Subscriber subInitialPose = node.subscribe("initial_2d", 1, set_initial_2d);
+  ros::Subscriber subImu = node.subscribe("imu/data", 100, update_heading);
+```
+
 Refer here for Full Code: [Code](https://github.com/Adipks/autonomous_navigation/blob/main/localization_data_pub/src/ekf_odom_pub.cpp)
