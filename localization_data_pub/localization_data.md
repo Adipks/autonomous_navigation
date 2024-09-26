@@ -18,7 +18,7 @@ The EKF helps **AMCL (Adaptive Monte Carlo Localization)** to more accurately lo
 
 > Robot's Intrinsic Parameters (Varies for Individual Rovers)
 
-```
+```cpp
 // Robot physical constants
 const double TICKS_PER_REVOLUTION = 620; // For reference purposes.
 const double WHEEL_RADIUS = 0.033; // Wheel radius in meters
@@ -28,7 +28,7 @@ const double TICKS_PER_METER = 2880;
 
 > Function to Interactively set the Robot's pose in RViZ
 
-```
+```cpp
 // Get initial_2d message from either Rviz clicks or a manual pose publisher
 void set_initial_2d(const geometry_msgs::PoseStamped &rvizClick) {
 
@@ -48,7 +48,7 @@ void set_initial_2d(const geometry_msgs::PoseStamped &rvizClick) {
 
 > Fused Odometry Message format initialisation
 
-```
+```cpp
   // Set the data fields of the odometry message
   odomNew.header.frame_id = "odom";
   odomNew.pose.pose.position.z = 0;
@@ -67,7 +67,7 @@ void set_initial_2d(const geometry_msgs::PoseStamped &rvizClick) {
 
 > Subscribers that gets information from Sensor topics
 
-```
+```cpp
   // Subscribe to ROS topics
   ros::Subscriber subForRightCounts = node.subscribe("right_ticks", 100, Calc_Right, ros::TransportHints().tcpNoDelay());
   ros::Subscriber subForLeftCounts = node.subscribe("left_ticks", 100, Calc_Left, ros::TransportHints().tcpNoDelay());
