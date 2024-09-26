@@ -5,6 +5,7 @@
 
 ### Folder Structure
 
-├── [Packing](https://github.com/Adipks/autonomous_navigation/blob/main/localization_data_pub/localization_data.md)
-└── [README.md](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/autonomous_navigation.md)
+├── [Localization](https://github.com/Adipks/autonomous_navigation/blob/main/localization_data_pub/localization_data.md)
+
+└── [Navigation Stack](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/autonomous_navigation.md)
 
