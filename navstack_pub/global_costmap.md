@@ -1,1 +1,39 @@
+# Global Costmap Parameters
+
+There are two approches that have been followed for costmap generation 
+
+> NavFn ROS
+
+> TEB Planner
+
+
+The initial setup included a costmap definition and tuning the parameters for the same where the NavFn planner was used for both the Local and Global Costmaps.
+
+NavFn provides a fast interpolated navigation function that can be used to create plans for a mobile base. The planner assumes a circular robot and operates on a costmap to find a minimum cost plan from a start point to an end point in a grid - Source [ROS Wiki](http://wiki.ros.org/navfn#:~:text=navfn%20provides%20a%20fast%20interpolated%20navigation%20function%20that%20can%20be)
+
+It includes two parameters as said for the above two costmaps.
+
+1) Global Costmap [Params](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/param/global_costmap_params.yaml)
+
+```
+global_frame: map
+robot_base_frame: base_link
+```
+
+> The above two lines are one of the most important params as they define relative to which frame the Global Cost Map should be visualised and it also plays a vital role in simulation as w.r.t. to map when we define the Robot's positions it will be helpful for Frame consistencies and as well as for transformations.
+
+```
+static_map: true
+```
+
+> For a Global Costmap, setting it as static is essential as it is a base frame with respect to which the Local Costmap is updated, basically it defines the boundaries for a region over which we wish to traverse the robot.
+
+```
+  update_frequency: 1.0
+  publish_frequency: 0.5
+```
+> This indicates at what rate the map should be updated computationally from the incoming frequencies and the publish frequencies indicate the rate at which the data from the map needs to be published.
+
+
+
 
