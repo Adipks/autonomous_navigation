@@ -15,9 +15,9 @@ Here is the list of Params that were fine tuned to acheive the Autonomy:
 
 #### Costmap Parameters
 
-│ ├── [Global Costmap](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/param/global_costmap_params.yaml)
+│ ├── [Global Costmap](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/global_costmap.md)
 
-│ ├── [Local Costmap](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/param/local_costmap_params.yaml)
+│ ├── [Local Costmap](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/local_costmap.md)
 
 Navigate Back[Back](https://github.com/Adipks/autonomous_navigation/tree/main)
 
