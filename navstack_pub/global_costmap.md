@@ -1,4 +1,4 @@
-# Global Costmap Parameters
+### Global Costmap Parameters
 
 There are two approches that have been followed for costmap generation 
 
@@ -29,11 +29,22 @@ static_map: true
 > For a Global Costmap, setting it as static is essential as it is a base frame with respect to which the Local Costmap is updated, basically it defines the boundaries for a region over which we wish to traverse the robot.
 
 ```
-  update_frequency: 1.0
-  publish_frequency: 0.5
+update_frequency: 1.0
+publish_frequency: 0.5
 ```
+
 > This indicates at what rate the map should be updated computationally from the incoming frequencies and the publish frequencies indicate the rate at which the data from the map needs to be published.
 
 
+```
+plugins:
+    - {name: static_layer,            type: "costmap_2d::StaticLayer"}
+    - {name: obstacle_layer,          type: "costmap_2d::VoxelLayer"}
+    - {name: inflation_layer,         type: "costmap_2d::InflationLayer"}
+```
+
+> There are certain built-in plugins that defines what type of layer the map should use. <br>
+  Static layer is basically for a Global Costmap is an layer that defines the boundaries and the static parts of map.<br>
+  Obstacle Layer defines the obstacles and we have an Inflation Layer that adds another layer to the Obstacle layer that helps to optimise the paths.
 
 
