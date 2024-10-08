@@ -13,11 +13,11 @@ Here is the list of Params that were fine tuned to acheive the Autonomy:
 
 ├── Adaptive Monte Carlo Localization[AMCL](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/param/amcl_params.yaml)
 
-│  [Costmap Parameters]
+#### Costmap Parameters
 
 │ ├── [Global Costmap](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/param/global_costmap_params.yaml)
 
 │ ├── [Local Costmap](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/param/local_costmap_params.yaml)
 
-└── [Navigate Back](https://github.com/Adipks/autonomous_navigation/tree/main)
+Navigate Back[Back](https://github.com/Adipks/autonomous_navigation/tree/main)
 
