@@ -177,3 +177,4 @@ our specific needs.
   cmd_angle_instead_rotvel: True # stage simulator takes the angle instead of the rotvel as input (twist message)
   # ********************************************************************
 ```
+[Back](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/local_costmap.md)
