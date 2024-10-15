@@ -22,7 +22,10 @@ For robots that can't move sideways (like car-like robots), TEB integrates these
 <h4>Multi-Horizon Planning:</h4>
 
 TEB can plan in both short-term and long-term horizons. In dynamic environments where obstacles might appear unexpectedly, TEB provides short-term optimizations that focus on the immediate vicinity of the robot. It adjusts the trajectory in real time while still maintaining a broader long-term goal.
-Reference[ ROS WIKI ](http://wiki.ros.org/teb_local_planner)
+Reference
 
 The following Documentation provides a overview of the parameters that have been tuned to satisfy our robot's constraints. 
 [Time Elastic Band](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/teb_params.md)
+
+
+[ ROS WIKI ](http://wiki.ros.org/teb_local_planner)
