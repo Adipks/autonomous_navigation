@@ -80,6 +80,6 @@ plugins:
 ```
 
 
-Navigate Back[Back](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/autonomous_navigation.md)
+Navigate Back [Back](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/autonomous_navigation.md)
 
 
