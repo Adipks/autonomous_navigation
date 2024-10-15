@@ -78,3 +78,8 @@ plugins:
    - {name: static_layer,        type: "costmap_2d::StaticLayer"}
    - {name: obstacle_layer,      type: "costmap_2d::ObstacleLayer"}
 ```
+
+
+Navigate Back[Back](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/autonomous_navigation.md)
+
+
