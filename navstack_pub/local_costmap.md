@@ -9,4 +9,4 @@ Reference[ ROS WIKI ](http://wiki.ros.org/teb_local_planner)
 
 
 The following Documentation provides a overview of the parameters that have been tuned to satisfy our robot's constraints. 
-Time Elastic Band[TEB](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/teb_params.md)
+[Time Elastic Band](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/teb_params.md)
