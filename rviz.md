@@ -43,11 +43,10 @@ An .rviz file is structured in XML format, where each display type (e.g., LaserS
 Global Options: Define fixed frame (usually set to map or odom) and background color.
 Displays: Individual displays represent different data sources (e.g., /scan for LiDAR, /map for a 2D map).
 Tools: RViz provides built-in tools like the Goal tool, which can be configured to publish goals to the navigation stack.
->Sample Configuration
+> Configuration for our autonomous stack [config-file](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/rviz/rviz_navigation.rviz)
+> Sample Config
 ```xml
-Always show details
 
-Copy code
 Panels:
   - Class: rviz/Displays
   Displays:
@@ -70,7 +69,7 @@ Here is a basic launch configuration that initializes RViz with a predefined .rv
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg config_file)"/>
 </launch>
 ```
-### Common Issues in RViz
+### Common Issues
 
 1. **Incorrect Fixed Frame**
    - Ensure the `Fixed Frame` is set to an available frame in your system.
