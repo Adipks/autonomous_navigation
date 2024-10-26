@@ -175,4 +175,4 @@ roslaunch navstack_pub navigation_main.launch
 
 ├──[Mapserver](https://github.com/Adipks/autonomous_navigation/blob/main/mapserver.md)
 
-└──[Rviz configs](https://github.com/Adipks/autonomous_navigation/blob/main/navstack_pub/rviz/rviz_navigation.rviz)
+└──[Rviz configs](https://github.com/Adipks/autonomous_navigation/blob/main/rviz.md)
